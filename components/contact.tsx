@@ -54,11 +54,11 @@ export default function Contact() {
               <div className="space-y-4">
                 <div className="flex items-center gap-3 text-text-main dark:text-white">
                   <span className="material-symbols-outlined text-primary">mail</span>
-                  <span>hello@mostafa.dev</span>
+                  <span>mostafa.gaber.hussein@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3 text-text-main dark:text-white">
                   <span className="material-symbols-outlined text-primary">location_on</span>
-                  <span>San Francisco, CA (Remote Friendly)</span>
+                  <span>Alexandria, Egypt (Remote Friendly)</span>
                 </div>
               </div>
             </div>

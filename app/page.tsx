@@ -5,6 +5,7 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/contact";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
+import Chatbot from "@/components/Chatbot";
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <Chatbot />
     </div>
   );
 }

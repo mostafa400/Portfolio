@@ -11,7 +11,7 @@ export default function Header() {
         <div className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-primary dark:bg-primary/20">
           <span className="material-symbols-outlined text-[20px]">smart_toy</span>
         </div>
-        <h2 className="font-display text-2xl font-bold tracking-tight">Mostafa.AI</h2>
+        <a href="/" className="font-display text-2xl font-bold tracking-tight">Mostafa.AI</a>
       </div>
 
       <button

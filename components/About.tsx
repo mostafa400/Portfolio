@@ -19,21 +19,22 @@ export default function About() {
           Hi, I'm Mostafa.
         </h2>
         <p className="mb-8 text-lg leading-relaxed text-text-sub dark:text-gray-400">
-          I'm an AI engineer and automation specialist based in San Francisco. I
-          build systems that save you time. My passion lies in connecting the dots
-          between complex AI models and real-world business problems.
+          I'm an AI automation developer based in Alexandria, Egypt. I build intelligent agents 
+that handle real business operations—WhatsApp booking systems, voice AI for appointment 
+confirmations, and conversational chatbots with full database integration.
+
         </p>
         <div className="flex gap-4">
           <a
             className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-text-main shadow-sm transition hover:scale-110 hover:text-primary dark:bg-gray-800 dark:text-white dark:hover:text-primary"
-            href="#"
+            href="mailto:mostafa.gaber.hussein@gmail.com"
             aria-label="Email"
           >
             <span className="material-symbols-outlined">mail</span>
           </a>
           <a
             className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-text-main shadow-sm transition hover:scale-110 hover:text-primary dark:bg-gray-800 dark:text-white dark:hover:text-primary"
-            href="#"
+            href="https://github.com/mostafa400"
             aria-label="GitHub"
           >
             <svg
@@ -51,7 +52,7 @@ export default function About() {
           </a>
           <a
             className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-text-main shadow-sm transition hover:scale-110 hover:text-primary dark:bg-gray-800 dark:text-white dark:hover:text-primary"
-            href="#"
+            href="https://www.linkedin.com/in/mostafa-gaber-g5/"
             aria-label="LinkedIn"
           >
             <svg

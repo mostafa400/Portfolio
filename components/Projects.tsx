@@ -106,15 +106,7 @@ export default function Projects() {
             <h2 className="text-3xl font-bold tracking-tight text-text-main dark:text-white">
               Featured Projects
             </h2>
-            <a
-              className="hidden items-center text-sm font-bold text-primary hover:underline md:flex"
-              href="#"
-            >
-              View all work{" "}
-              <span className="material-symbols-outlined text-sm">
-                arrow_forward
-              </span>
-            </a>
+  
           </div>
           <div className="flex flex-col gap-8">
             {projects.map((project, index) => (

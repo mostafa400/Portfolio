@@ -11,10 +11,10 @@ export default function Footer() {
 
           {/* Right - Social Links */}
           <div className="flex items-center gap-6 text-sm text-gray-400">
-            <a href="#" className="hover:text-white transition-colors">Twitter</a>
-            <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
-            <a href="#" className="hover:text-white transition-colors">GitHub</a>
-            <a href="#" className="hover:text-white transition-colors">Dribbble</a>
+            
+            <a href="https://www.linkedin.com/in/mostafa-gaber-g5/" className="hover:text-white transition-colors">LinkedIn</a>
+            <a href="https://github.com/mostafa400" className="hover:text-white transition-colors">GitHub</a>
+            
           </div>
         </div>
         

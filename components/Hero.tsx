@@ -18,7 +18,9 @@ export default function Hero() {
               AI Automation Expert
             </h1>
             <h2 className="font-display text-lg font-normal leading-relaxed text-text-sub dark:text-gray-400">
-              I help businesses streamline processes and save time with intelligent agents and custom automation pipelines.
+              Building intelligent agents that handle customer conversations, automate reservations, 
+and eliminate repetitive work—powered by n8n, Python, and voice AI.
+
             </h2>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row">
