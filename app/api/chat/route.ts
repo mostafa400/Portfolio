@@ -125,6 +125,14 @@ Be human, be clear, be useful.`
 
 export async function POST(req: NextRequest) {
   try {
+
+    if (!OPENROUTER_API_KEY) {
+      console.error("Missing OPENROUTER_API_KEY");
+      return NextResponse.json(
+        { error: "Service temporarily unavailable" },
+        { status: 503 }
+      );
+    }
     const forwarded = req.headers.get("x-forwarded-for");
     const ip = forwarded ? forwarded.split(',')[0].trim() : 
            req.headers.get("x-real-ip") || 
