@@ -139,6 +139,14 @@ console.log("Key length:", OPENROUTER_API_KEY?.length);
 console.log("Key preview:", OPENROUTER_API_KEY?.substring(0, 15));
 console.log("All env keys:", Object.keys(process.env).filter(k => k.includes('OPEN')));
 console.log("==================");
+// Right before the fetch call, add:
+console.log("=== TESTING API KEY ===");
+console.log("Key starts with 'sk-or-v1':", OPENROUTER_API_KEY?.startsWith('sk-or-v1'));
+console.log("Key length:", OPENROUTER_API_KEY?.length);
+console.log("Key has quotes:", OPENROUTER_API_KEY?.includes('"') || OPENROUTER_API_KEY?.includes("'"));
+console.log("First 20 chars:", OPENROUTER_API_KEY?.substring(0, 20));
+console.log("Last 10 chars:", OPENROUTER_API_KEY?.substring(OPENROUTER_API_KEY.length - 10));
+console.log("=======================");
     const forwarded = req.headers.get("x-forwarded-for");
     const ip = forwarded ? forwarded.split(',')[0].trim() : 
            req.headers.get("x-real-ip") || 
