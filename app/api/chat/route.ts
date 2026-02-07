@@ -126,13 +126,19 @@ Be human, be clear, be useful.`
 export async function POST(req: NextRequest) {
   try {
 
-    if (!OPENROUTER_API_KEY) {
-      console.error("Missing OPENROUTER_API_KEY");
-      return NextResponse.json(
-        { error: "Service temporarily unavailable" },
-        { status: 503 }
-      );
-    }
+    // if (!OPENROUTER_API_KEY) {
+    //   console.error("Missing OPENROUTER_API_KEY");
+    //   return NextResponse.json(
+    //     { error: "Service temporarily unavailable" },
+    //     { status: 503 }
+    //   );
+    // }
+    console.log("=== DEBUG INFO ===");
+console.log("Has API key:", !!OPENROUTER_API_KEY);
+console.log("Key length:", OPENROUTER_API_KEY?.length);
+console.log("Key preview:", OPENROUTER_API_KEY?.substring(0, 15));
+console.log("All env keys:", Object.keys(process.env).filter(k => k.includes('OPEN')));
+console.log("==================");
     const forwarded = req.headers.get("x-forwarded-for");
     const ip = forwarded ? forwarded.split(',')[0].trim() : 
            req.headers.get("x-real-ip") || 
